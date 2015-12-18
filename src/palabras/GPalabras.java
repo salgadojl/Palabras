@@ -67,7 +67,7 @@ public class GPalabras extends javax.swing.JFrame {
         setTitle("Gestion de Palabras");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel1.setText("Gestion de Palabras");
+        jLabel1.setText("Gestión de Palabras");
 
         jLabel2.setText("Palabra:");
 
