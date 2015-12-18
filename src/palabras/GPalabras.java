@@ -22,6 +22,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import static palabras.PrimeraMayuscula.primeraMayuscula;
 
 /**
  *
@@ -79,15 +80,37 @@ public class GPalabras extends javax.swing.JFrame {
 
         jLabel6.setText("Imagen:");
 
+        jTextPalabra.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jTextPalabraFocusLost(evt);
+            }
+        });
+
         jTextSig1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextSig1ActionPerformed(evt);
+            }
+        });
+        jTextSig1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jTextSig1FocusLost(evt);
+            }
+        });
+
+        jTextSig2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jTextSig2FocusLost(evt);
             }
         });
 
         jTextSig3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextSig3ActionPerformed(evt);
+            }
+        });
+        jTextSig3.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jTextSig3FocusLost(evt);
             }
         });
 
@@ -281,6 +304,26 @@ FileInputStream fis = new FileInputStream(imagen);
     private void jTextSig3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextSig3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextSig3ActionPerformed
+
+    private void jTextPalabraFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextPalabraFocusLost
+                jTextPalabra.setText(primeraMayuscula(jTextPalabra.getText()));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextPalabraFocusLost
+
+    private void jTextSig1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextSig1FocusLost
+          jTextSig1.setText(primeraMayuscula(jTextSig1.getText()));
+              // TODO add your handling code here:
+    }//GEN-LAST:event_jTextSig1FocusLost
+
+    private void jTextSig2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextSig2FocusLost
+jTextSig2.setText(primeraMayuscula(jTextSig2.getText()));
+                  // TODO add your handling code here:
+    }//GEN-LAST:event_jTextSig2FocusLost
+
+    private void jTextSig3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextSig3FocusLost
+jTextSig3.setText(primeraMayuscula(jTextSig3.getText()));
+                  // TODO add your handling code here:
+    }//GEN-LAST:event_jTextSig3FocusLost
 
     /**
      * @param args the command line arguments

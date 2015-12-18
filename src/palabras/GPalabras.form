@@ -169,17 +169,25 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextPalabra">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextPalabraFocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextSig1">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSig1ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextSig1FocusLost"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextSig2">
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextSig2FocusLost"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextSig3">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSig3ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextSig3FocusLost"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
