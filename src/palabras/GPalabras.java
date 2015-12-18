@@ -79,13 +79,17 @@ public class GPalabras extends javax.swing.JFrame {
 
         jLabel6.setText("Imagen:");
 
-        jTextPalabra.setText("Casa");
+        jTextSig1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextSig1ActionPerformed(evt);
+            }
+        });
 
-        jTextSig1.setText("CARse");
-
-        jTextSig2.setText("House2");
-
-        jTextSig3.setText("House3");
+        jTextSig3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextSig3ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Seleccionar Imagen...");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -269,6 +273,14 @@ FileInputStream fis = new FileInputStream(imagen);
 
         }        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextSig1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextSig1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextSig1ActionPerformed
+
+    private void jTextSig3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextSig3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextSig3ActionPerformed
 
     /**
      * @param args the command line arguments

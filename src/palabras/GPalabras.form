@@ -169,24 +169,18 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextPalabra">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Casa"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextSig1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="CARse"/>
-          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSig1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextSig2">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="House2"/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextSig3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="House3"/>
-          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextSig3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
